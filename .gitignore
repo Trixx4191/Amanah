@@ -1,0 +1,60 @@
+# --- Secrets / env / credentials ---
+.env
+.env.*
+*.pem
+*.key
+secrets.yaml
+secrets.yml
+**/config/local_rules.yaml
+credentials.json
+*token*.json
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+.coverage.*
+
+# --- FastF1 / telemetry caches (these get big fast) ---
+.fastf1_cache/
+fastf1_cache/
+*.ff1pkl
+
+# --- Data files (raw telemetry, exports, DB files) ---
+*.csv
+*.parquet
+*.duckdb
+*.sqlite
+*.sqlite3
+data/raw/
+data/cache/
+*.log
+
+# --- Node / frontend (once Phase 4 frontend exists) ---
+node_modules/
+dist/
+.next/
+*.local
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# --- Docker ---
+*.pid
+

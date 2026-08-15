@@ -1,0 +1,14 @@
+# Core dependencies for the local agent.
+# IMPORTANT: install torch (CPU build) BEFORE this file — see docs/setup.md.
+# Do NOT just `pip install -r requirements.txt` first, or pip will pull the
+# full CUDA-enabled torch build (multiple GB, unnecessary on CPU-only setups).
+
+llama-cpp-python>=0.3.0    # local LLM inference (compiles from source, takes a few minutes)
+sentence-transformers>=3.0 # local embedding model
+pymupdf>=1.24              # PDF parsing
+python-docx>=1.1           # DOCX parsing
+numpy>=1.26                # vector math for the vector store
+rich>=13.0                 # nicer CLI output (optional but recommended)
+
+# Dev/testing
+pytest>=8.0
